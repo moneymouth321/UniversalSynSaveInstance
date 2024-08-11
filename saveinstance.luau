@@ -1654,11 +1654,7 @@ local function synsaveinstance(CustomOptions, CustomOptions2)
 	local FilePath = OPTIONS.FilePath
 	local SaveCacheInterval = OPTIONS.SaveCacheInterval
 	local ToSaveInstance = OPTIONS.Object
-	local IsModel = OPTIONS.IsModel
-
-	if ToSaveInstance and CustomOptions.IsModel == nil then
-		IsModel = true
-	end
+	local IsModel = false
 
 	local IgnoreDefaultProperties = OPTIONS.IgnoreDefaultProperties
 	local IgnoreNotArchivable = not OPTIONS.IgnoreNotArchivable
